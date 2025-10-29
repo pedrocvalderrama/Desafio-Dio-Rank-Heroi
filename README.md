@@ -28,5 +28,9 @@ O Herói de nome Kael está no nível de Ouro.
 🛠️ Detalhes da Implementação
 O script utiliza uma abordagem sequencial para determinar o rank:Define a lista de classificadores (limites de XP) e a lista de rank (nomes dos níveis).
 Lê o name (string) e o nivel (número inteiro) fornecidos pelo usuário.
-Usa um laço de repetição (for) que percorre a lista de limites de XP.Dentro do laço, ele verifica se o XP do herói é menor ou igual ao limite atual (classificadores[i]).
+
+Usa um laço de repetição (for) que percorre a lista de limites de XP.
+
+Dentro do laço, ele verifica se o XP do herói é menor ou igual ao limite atual (classificadores[i]).
+
 Ao encontrar a primeira condição verdadeira, ele imprime o rank correspondente (rank[i]) e usa break para sair do loop.Caso o loop termine sem quebrar, o XP é maior que o último classificador (10.000), e o rank é definido como "Radiante" em uma verificação final (if nivel > 10000).
